@@ -52,5 +52,8 @@ form input, input::-webkit-input-placeholder {
     text-align: center;
 }
 
-
+.score {
+    font-size: 60px;
+    font-family: Helvetica, sans-serif;
+}
 
