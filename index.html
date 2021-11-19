@@ -14,24 +14,24 @@
             <div class="player-1">
                 <h2 class="header-player">Player 1</h2>
                 <hr>
-                <h2 class="score">{{player.score}}
+                <h2 class="score">{{player1.score}}
                 </h2>
             </div>
 
             <div class="score-div">
                 <div class="set-count-div">
-                    <p class="player-setcount">{{player.noOfSetWon}}</p>
+                    <p class="player-setcount">{{player1.noOfSetWon}}</p>
                     <p class="vs">vs</p>
-                    <p class="player-setcount">{{player.getNoOfSetWon()}}</p>
+                    <p class="player-setcount">{{player2.getNoOfSetWon()}}</p>
                 </div>
-                <form >
-                    <input class="score-input" type="text" placeholder="Skriv her" v-model="input">
+                <form @submit.prevent="onSubmit">
+                    <input class="score-input" type="number" placeholder="Skriv her" v-model.trim="input">
                 </form>
             </div>
             <div class="player-2">
                 <h2 class="header-player">Player 2</h2>
                 <hr>
-                <h2 class="score">{{player.score}}</h2>
+                <h2 class="score">{{player2.score}}</h2>
             </div>
         </div>
     </div>
